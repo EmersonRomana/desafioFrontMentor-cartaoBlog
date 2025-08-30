@@ -1,3 +1,5 @@
+<img src="./assets/Overview.png">
+
 # 📘 README - Blog Preview Card (Frontend Mentor)
 
 Este projeto é baseado no desafio **[Blog Preview
