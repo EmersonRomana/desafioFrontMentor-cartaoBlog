@@ -1,0 +1,150 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+
+:root {
+  /* Cores */
+  --amarelo: #f4d04e;
+  --gray-1: #111111;
+  --gray-2: #6b6b6b;
+  --branco: #ffffff;
+
+  /* Fonte */
+  --font-size-xs: 500 0.875rem/1.5 "Figtree", sans-serif;
+  --font-size-xs-2: 800 0.875rem/1.5 "Figtree", sans-serif;
+  --font-size-sm-2: 500 1rem/1.5 "Figtree", sans-serif;
+  --font-size-xl: 800 1.5rem/1.5 "Figtree", sans-serif;
+
+  /* Espaçamento */
+  --e24: 24px;
+  --e12: 12px;
+  --e8: 8px;
+  --e4: 4px;
+}
+
+body {
+  background-color: var(--amarelo);
+}
+
+.container {
+  margin-block: 219px;
+}
+
+.card {
+  margin: auto;
+  width: 384px;
+  height: auto;
+  background-color: var(--branco);
+  border: 1px solid var(--gray-1);
+  box-shadow: 8px 8px 0 0 #000;
+  border-radius: 20px;
+}
+
+.card img {
+  padding: var(--e24);
+}
+
+.descricao {
+  padding-inline: var(--e24);
+}
+
+.menu-lang {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: var(--e12);
+}
+
+.menu-lang h2 {
+  color: var(--gray-1);
+  font: var(--font-size-xs-2);
+  background-color: var(--amarelo);
+  padding: var(--e4) var(--e8);
+  border-radius: 4px;
+}
+
+.lang {
+  height: 26px;
+  display: flex;
+  align-items: center;
+  gap: var(--e8);
+}
+
+.lang img {
+  background-color: var(--amarelo);
+  padding: 6.5px;
+  border-radius: 4px;
+}
+
+.lang img:hover,
+.lang img:active {
+  background-color: #e2b100;
+}
+
+.none {
+  display: inline-block;
+  align-items: center;
+  font: var(--font-size-sm-2);
+  font-size: 0.8rem;
+}
+
+.none span {
+  padding: 4px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.none span:hover:not(:nth-child(even)),
+.none span:active:not(:nth-child(even)) {
+  background-color: var(--amarelo);
+}
+
+.none span.active {
+  color: var(--amarelo);
+  font-weight: 600;
+}
+
+.descricao h3 {
+  font: var(--font-size-xs);
+  color: var(--gray-1);
+  margin-bottom: var(--e12);
+}
+
+.descricao h1 {
+  font: var(--font-size-xl);
+  color: var(--gray-1);
+  margin-bottom: var(--e12);
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.descricao h1:hover,
+.descricao h1:active {
+  color: var(--amarelo);
+}
+
+.descricao p {
+  font: var(--font-size-sm-2);
+  color: var(--gray-2);
+  margin-bottom: var(--e24);
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  gap: var(--e8);
+  padding-inline: var(--e24);
+  padding-bottom: var(--e24);
+}
+
+.profile img {
+  padding: 0px;
+}
+
+.profile span {
+  font: var(--font-size-xs-2);
+  color: var(--gray-1);
+}
