@@ -6,50 +6,51 @@ do Frontend Mentor.\
 O objetivo é recriar um cartão de blog responsivo com HTML e CSS,
 adicionando interatividade em JavaScript.
 
-------------------------------------------------------------------------
+---
 
 ## 🚀 Tecnologias usadas
 
--   **HTML5** -- Estrutura do conteúdo.\
--   **CSS3** -- Estilização com variáveis, tipografia e responsividade.\
--   **JavaScript (DOM)** -- Manipulação dinâmica para alternância de
-    idiomas e controle de interface.
+- **HTML5** -- Estrutura do conteúdo.\
+- **CSS3** -- Estilização com variáveis, tipografia e responsividade.\
+- **JavaScript (DOM)** -- Manipulação dinâmica para alternância de
+  idiomas e controle de interface.
 
-------------------------------------------------------------------------
+---
 
 ## 🎨 Layout
 
 O cartão contém: - Imagem de capa\
+
 - Categoria do post\
 - Data de publicação\
 - Título e descrição\
 - Informações do autor\
 - Um seletor de idioma (PT / EN)
 
-------------------------------------------------------------------------
+---
 
 ## 🖥️ Funcionalidades
 
 ### 1. Alternância de Idiomas
 
--   O usuário pode escolher entre **Português (PT)** e **Inglês (EN)**.\
--   Ao clicar em cada opção, o conteúdo do card é atualizado
-    dinamicamente.\
--   O idioma ativo recebe destaque visual (texto e borda amarela).
+- O usuário pode escolher entre **Português (PT)** e **Inglês (EN)**.
+- Ao clicar em cada opção, o conteúdo do card é atualizado
+  dinamicamente.
+- O idioma ativo recebe destaque visual (texto e borda amarela).
 
 ### 2. Menu de Seleção de Idioma
 
--   O ícone de tradução abre/fecha a área de seleção de idiomas.\
--   Quando aberto, o ícone muda para a versão amarela.\
--   Quando fechado, retorna à versão padrão.
+- O ícone de tradução abre/fecha a área de seleção de idiomas.
+- Quando aberto, o ícone muda para a versão amarela.
+- Quando fechado, retorna à versão padrão.
 
-------------------------------------------------------------------------
+---
 
 ## 📜 Explicação do JavaScript
 
 ### Estrutura de textos
 
-``` js
+```js
 const textos = {
   pt: { ... },
   en: { ... }
@@ -60,7 +61,7 @@ Criamos um objeto com os textos em **PT** e **EN**.
 
 ### Seletores do DOM
 
-``` js
+```js
 const btnTraducao = document.getElementById("traducao");
 const btnLang = document.querySelector(".none");
 const EN = document.getElementById("en");
@@ -72,7 +73,7 @@ opções e botões PT/EN.
 
 ### Toggle do menu
 
-``` js
+```js
 btnTraducao.addEventListener("click", function () {
   if (btnLang.style.display === "none" || btnLang.style.display === "") {
     btnLang.style.display = "inline-block";
@@ -89,7 +90,7 @@ botão.
 
 ### Alterar idioma
 
-``` js
+```js
 EN.addEventListener("click", function () {
   h2.textContent = textos.en.h2;
   ...
@@ -101,7 +102,7 @@ EN.addEventListener("click", function () {
 Cada botão substitui os textos e aplica a classe `.active` para destacar
 o idioma selecionado.
 
-------------------------------------------------------------------------
+---
 
 ## 📂 Estrutura de pastas
 
@@ -112,8 +113,8 @@ o idioma selecionado.
      ┣ 📂 assets
      ┗ 📜 README.md
 
-------------------------------------------------------------------------
+---
 
-## ✨ Autor
+## ✨ Emerson Romana
 
 Projeto desenvolvido como parte dos desafios do **Frontend Mentor**.
